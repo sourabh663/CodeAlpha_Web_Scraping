@@ -1,12 +1,3 @@
-"""
-Task 1: Web Scraping
-Scrapes book information from https://books.toscrape.com/
-Run: python scraping.py
-Output: output/books_dataset.csv
-
-This is a practice website intended for learning web scraping.
-The script follows pagination and uses a short delay between requests.
-"""
 import time
 from pathlib import Path
 from urllib.parse import urljoin
@@ -27,7 +18,6 @@ RATING_MAP = {
 
 
 def scrape_books():
-    """Collect book details from every catalogue page."""
     session = requests.Session()
     session.headers.update(HEADERS)
 
@@ -79,7 +69,6 @@ def scrape_books():
             if next_link else None
         )
 
-        # Be considerate to the practice website.
         if current_url:
             time.sleep(1)
 
