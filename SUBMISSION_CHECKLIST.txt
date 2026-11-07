@@ -1,0 +1,7 @@
+Before submitting:
+[ ] Run: python -m pip install -r requirements.txt
+[ ] Run: python scraping.py
+[ ] Confirm output/books_dataset.csv contains the freshly scraped records
+[ ] Take screenshots of the code, successful terminal output, and CSV file
+[ ] Add screenshots to the screenshots folder
+[ ] Submit the project folder or ZIP as instructed
